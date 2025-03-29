@@ -6,14 +6,15 @@
         <div class="grid md:grid-cols-2 gap-6 md:gap-8">
           <div class="space-y-4">
             <p class="text-sm md:text-lg opacity-70 leading-relaxed" data-aos="fade-up" data-aos-delay="400">
-              I'm a passionate frontend developer with a strong focus on creating 
-              user-friendly and performant web applications. With experience in 
-              modern frameworks and best practices, I strive to deliver exceptional 
-              digital experiences.
+              I'm a dedicated full-stack web development student with a passion for building 
+              modern, efficient, and user-friendly web applications. I enjoy working with both 
+              frontend and backend technologies, always striving to improve my skills and stay 
+              up to date with the latest industry trends. My goal is to create seamless digital 
+              experiences that combine functionality and aesthetics.
             </p>
             <div class="space-y-2" data-aos="fade-up" data-aos-delay="600">
               <p class="flex items-center gap-2 text-sm md:text-lg text-primary">
-                <span>📚 Currently studying at VTDT</span>
+                <span>📚 Currently studying at Vidzemes Thenologijas un dizaina tehnikums</span>
               </p>
             </div>
           </div>
@@ -22,16 +23,12 @@
               <h3 class="card-title text-xl md:text-3xl mb-2 md:mb-4">Quick Facts</h3>
               <ul class="space-y-2 md:space-y-3">
                 <li class="flex space-x-3 md:space-x-5 items-center gap-1 md:gap-2 text-sm md:text-lg">
-                  <span class="w-20 md:w-24 opacity-70">Location:</span>
-                  <span>Latvia</span>
-                </li>
-                <li class="flex space-x-3 md:space-x-5 items-center gap-1 md:gap-2 text-sm md:text-lg">
-                  <span class="w-20 md:w-24 opacity-70">Email:</span>
-                  <span class="break-all">mikelsons3333@gmail.com</span>
-                </li>
-                <li class="flex space-x-3 md:space-x-5 items-center gap-1 md:gap-2 text-sm md:text-lg">
                   <span class="w-20 md:w-24 opacity-70">Languages:</span>
                   <span>Latvian, English</span>
+                </li>
+                <li class="flex space-x-3 md:space-x-5 items-center gap-1 md:gap-2 text-sm md:text-lg">
+                  <span class="w-20 md:w-24 opacity-70">Hobbies:</span>
+                  <span>game dev</span>
                 </li>
               </ul>
             </div>

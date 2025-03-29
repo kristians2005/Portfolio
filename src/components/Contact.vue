@@ -1,59 +1,52 @@
 <template>
-  <div class="py-16">
-    <h2 class="text-4xl font-bold mb-12 text-center">Get In Touch</h2>
-    <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-      <div class="space-y-8">
-        <h3 class="text-2xl font-semibold">Let's Talk</h3>
-        <p class="opacity-70">
-          I'm always open for new opportunities and interesting projects.
-          Feel free to reach out if you want to work together!
-        </p>
-        <div class="space-y-4">
-          <div v-for="contact in contactInfo" :key="contact.type"
-               class="card bg-base-200 hover:bg-base-300 transition-colors cursor-pointer">
-            <div class="card-body flex-row items-center gap-4 p-4">
-              <span class="text-2xl text-primary">{{ contact.icon }}</span>
-              <div>
-                <h4 class="font-medium">{{ contact.type }}</h4>
-                <p class="opacity-70">{{ contact.value }}</p>
-              </div>
-            </div>
-          </div>
+  <div class="flex items-center justify-center w-full min-h-screen px-3 md:px-4">
+    <div class="max-w-6xl w-full bg-base-100 p-4 md:p-12 rounded-2xl flex flex-col items-center shadow-xl" data-aos="fade-up">
+      <h2 class="text-3xl md:text-6xl font-bold mb-8 " data-aos="fade-right" data-aos-delay="200">Get In Touch</h2>
+      
+      <div class="grid md:grid-cols-3 gap-6 w-full max-w-3xl mb-8" data-aos="fade-up" data-aos-delay="300">
+        <div v-for="info in contactInfo" :key="info.type" 
+             class="card bg-base-200 p-4 text-center">
+          <div class="text-2xl mb-2">{{ info.icon }}</div>
+          <div class="font-medium">{{ info.type }}</div>
+          <div class="text-sm opacity-70">{{ info.value }}</div>
         </div>
       </div>
-      
-      <form @submit.prevent="handleSubmit" class="space-y-6">
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Name</span>
-          </label>
-          <input type="text" v-model="form.name" class="input input-bordered" />
-        </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Email</span>
-          </label>
-          <input type="email" v-model="form.email" class="input input-bordered" />
-        </div>
-        <div class="form-control">
-          <label class="label">
-            <span class="label-text">Message</span>
-          </label>
-          <textarea v-model="form.message" class="textarea textarea-bordered" rows="5"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary w-full">Send Message</button>
-      </form>
+        
+        <form @submit.prevent="handleSubmit" 
+              class="card bg-base-200 w-max p-6 space-y-6"
+              data-aos="fade-left" 
+              data-aos-delay="400">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Name</span>
+            </label>
+            <input type="text" v-model="form.name" class="input input-bordered" />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input type="email" v-model="form.email" class="input input-bordered" />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Message</span>
+            </label>
+            <textarea v-model="form.message" class="textarea textarea-bordered" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">Send Message</button>
+        </form>
+      </div>
     </div>
-  </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
 
 const contactInfo = [
-  { type: 'Email', value: 'your@email.com', icon: '📧' },
-  { type: 'Location', value: 'Your City, Country', icon: '📍' },
-  { type: 'Phone', value: '+1 234 567 890', icon: '📱' }
+  { type: 'Email', value: 'mikelsons3333@gmail.com', icon: '📧' },
+  { type: 'Location', value: 'Latvia', icon: '📍' },
+  { type: 'Phone', value: 'Ask in email', icon: '📱' }
 ];
 
 const form = ref({
