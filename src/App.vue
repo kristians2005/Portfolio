@@ -9,7 +9,7 @@ import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-  <div class="min-h-screen " >
+  <div class="min-h-screen overflow-hidden" >
     <BackGround />
     <Navbar />
     <main class="">
