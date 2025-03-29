@@ -93,7 +93,7 @@ export const translations = {
       hobbiesList: 'spēļu izstrāde'
     },
     projects: {
-      title: 'Izcelti Projekti',
+      title: 'Projekti',
       liveDemo: 'Skatīt Demo',
       projects: [
         {

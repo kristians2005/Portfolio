@@ -3,7 +3,7 @@
     <div class="max-w-6xl w-full bg-base-100 p-4 md:p-12 rounded-2xl shadow-xl" data-aos="fade-up">
       <h2 class="text-3xl md:text-6xl font-bold mb-8" data-aos="fade-right" data-aos-delay="200">{{ t('projects.title') }}</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-for="(project, index) in t('projects.projects')" :key="project.title" 
+        <div v-for="(project, index) in projects" :key="project.title" 
              class="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300"
              :data-aos="index % 2 === 0 ? 'fade-right' : 'fade-left'"
              :data-aos-delay="300 + (index * 100)">
@@ -11,7 +11,7 @@
             <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
             <div class="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 
                         bg-primary bg-opacity-40 flex items-center justify-center gap-4">
-              <a :href="project.demo" target="_blank" class="btn btn-sm">{{ t('projects.liveDemo') }}</a>
+              <a :href="project.demo" target="_blank" class="btn btn-sm">Live Demo</a>
               <a :href="project.github" target="_blank" class="btn btn-sm btn-primary">GitHub</a>
             </div>
           </figure>
@@ -33,28 +33,13 @@
 
 <script setup lang="ts">
 import { t } from '../locales/storeTranslations';
+import omori from '../assets/omori.png'
 
 const projects = [
-  {
-    title: 'E-Commerce Platform',
-    description: 'A modern e-commerce platform with cart functionality and payment integration.',
-    image: '/project1.jpg',
-    demo: '#',
-    github: '#',
-    technologies: ['Vue.js', 'Tailwind CSS', 'Node.js']
-  },
-  {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates.',
-    image: '/project2.jpg',
-    demo: '#',
-    github: '#',
-    technologies: ['React', 'TypeScript', 'Firebase']
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'A responsive portfolio website showcasing creative work and skills.',
-    image: '/project3.jpg',
+    {
+    title: 'will add projects later',
+    description: 'coming',
+    image: omori,
     demo: '#',
     github: '#',
     technologies: ['Vue.js', 'Tailwind CSS', 'Vite']
