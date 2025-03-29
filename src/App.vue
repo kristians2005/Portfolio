@@ -6,6 +6,7 @@ import Projects from './components/Projects.vue';
 import Skills from './components/Skills.vue';
 import Contact from './components/Contact.vue';
 import Navbar from './components/Navbar.vue';
+import { t } from './locales/storeTranslations';
 </script>
 
 <template>
@@ -37,7 +38,7 @@ import Navbar from './components/Navbar.vue';
     </main>
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
       <div>
-        <p>© 2024 - All rights reserved</p>
+        <p>{{ t('footer.rights') }}</p>
       </div>
     </footer>
   </div>

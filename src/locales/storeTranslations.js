@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 import { translations } from './translations';
 
-const currentLanguage = ref('en');
+const currentLanguage = ref('lv');
 
 export const t = (key) => {
   const keys = key.split('.');
