@@ -12,7 +12,7 @@ import Navbar from './components/Navbar.vue';
   <div class="min-h-screen " >
     <BackGround />
     <Navbar />
-    <main class="container">
+    <main class="">
       <div class="flex flex-col gap-32">
         <section id="home" class="min-h-[90vh] flex items-center">
           <Introduction />
